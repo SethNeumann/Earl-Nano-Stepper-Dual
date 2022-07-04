@@ -1,10 +1,2 @@
-### How to use this template:
-
-  1. Create a repo using this template, 
-  2. Create your project content using eagle...
-  3. Edit the other text files to describe your project
-  4. git add .
-  5. git commit -m "add to git"
-  6. git tag -a 1.0 -m 1.0
-  7. git push origin 1.0
-  
+This is a revision of Earls-Nano-Stepper which supported a single stepper motor with an Arduino Nano, a ULN2003 high current driver, a molex connector
+for the stepper and inputs for home sensors.  This version uses a ULN2803 with 8 segments to support 2 steppers (4 ea), 2 molex connectors and 2 home sensors.

@@ -4517,7 +4517,7 @@ ULN and UDN Series&lt;p&gt;
 <part name="P+5" library="SPCoast" deviceset="+5V" device=""/>
 <part name="GND3" library="SPCoast" deviceset="GND" device=""/>
 <part name="GND6" library="SPCoast" deviceset="GND" device=""/>
-<part name="ROT" library="SPCoast" deviceset="CONNECTOR-M05" device="LOCK" value="B5B-XH"/>
+<part name="S2" library="SPCoast" deviceset="CONNECTOR-M05" device="LOCK" value="B5B-XH"/>
 <part name="CON4" library="SPCoast" deviceset="CONNECTOR-M03" device="254-LOCK" value="CONNECTOR-M03254-LOCK"/>
 <part name="RN2" library="resistor-net" deviceset="RN08" device="" value="1000"/>
 <part name="LED12" library="SPCoast" deviceset="LED*" device="LED3MM" value="RED"/>
@@ -4528,9 +4528,9 @@ ULN and UDN Series&lt;p&gt;
 <part name="CON3" library="SPCoast" deviceset="CONNECTOR-M02" device="350-LOCK"/>
 <part name="CON7" library="SPCoast" deviceset="CONNECTOR-M04" device="SCREW_LOCK"/>
 <part name="IC1" library="uln-udn" deviceset="ULN2803A" device="" value="ULN2803"/>
-<part name="CON1" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK"/>
+<part name="HOME" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK"/>
 <part name="LED1" library="SPCoast" deviceset="LED*" device="LED3MM" value="GRN"/>
-<part name="HOOK" library="SPCoast" deviceset="CONNECTOR-M05" device="LOCK" value="B5B-XH"/>
+<part name="S1" library="SPCoast" deviceset="CONNECTOR-M05" device="LOCK" value="B5B-XH"/>
 <part name="LED8" library="SPCoast" deviceset="LED*" device="LED3MM" value="RED"/>
 <part name="LED7" library="SPCoast" deviceset="LED*" device="LED3MM" value="RED"/>
 <part name="LED5" library="SPCoast" deviceset="LED*" device="LED3MM" value="RED"/>
@@ -4551,8 +4551,8 @@ GND
 GND</text>
 <text x="180.34" y="139.7" size="1.778" layer="91">STP Power Select</text>
 <text x="15.24" y="143.51" size="1.778" layer="91">+5
-R Home
-H Home
+2
+1
 GND</text>
 </plain>
 <instances>
@@ -4580,7 +4580,7 @@ GND</text>
 </instance>
 <instance part="GND3" gate="1" x="63.5" y="40.64"/>
 <instance part="GND6" gate="1" x="180.34" y="160.02"/>
-<instance part="ROT" gate="CON1" x="254" y="180.34" rot="R180"/>
+<instance part="S2" gate="CON1" x="254" y="180.34" rot="R180"/>
 <instance part="CON4" gate="G$1" x="191.77" y="147.32" smashed="yes">
 <attribute name="NAME" x="190.5" y="155.702" size="1.778" layer="95"/>
 </instance>
@@ -4605,9 +4605,9 @@ GND</text>
 <instance part="CON3" gate="J" x="53.34" y="45.72"/>
 <instance part="CON7" gate="J" x="256.54" y="111.76" rot="R180"/>
 <instance part="IC1" gate="G$1" x="193.04" y="175.26"/>
-<instance part="CON1" gate="J" x="30.48" y="147.32"/>
+<instance part="HOME" gate="J" x="30.48" y="147.32"/>
 <instance part="LED1" gate="LED" x="55.88" y="157.48"/>
-<instance part="HOOK" gate="CON1" x="254" y="157.48" rot="R180"/>
+<instance part="S1" gate="CON1" x="254" y="157.48" rot="R180"/>
 <instance part="LED8" gate="LED" x="223.52" y="190.5" smashed="yes">
 <attribute name="NAME" x="227.076" y="188.468" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="226.695" y="196.088" size="1.778" layer="96" rot="R90"/>
@@ -4694,7 +4694,7 @@ GND</text>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="CON1" gate="J" pin="1"/>
+<pinref part="HOME" gate="J" pin="1"/>
 <wire x1="38.1" y1="144.78" x2="35.56" y2="144.78" width="0.4064" layer="91"/>
 </segment>
 <segment>
@@ -4782,7 +4782,7 @@ GND</text>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="48.26" y1="182.88" x2="48.26" y2="152.4" width="0.6096" layer="91"/>
-<pinref part="CON1" gate="J" pin="4"/>
+<pinref part="HOME" gate="J" pin="4"/>
 <wire x1="48.26" y1="152.4" x2="35.56" y2="152.4" width="0.4064" layer="91"/>
 </segment>
 <segment>
@@ -4828,7 +4828,7 @@ GND</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="ROT" gate="CON1" pin="1"/>
+<pinref part="S2" gate="CON1" pin="1"/>
 <wire x1="205.74" y1="185.42" x2="243.84" y2="185.42" width="0.3048" layer="91"/>
 <pinref part="LED12" gate="LED" pin="C"/>
 <wire x1="243.84" y1="185.42" x2="246.38" y2="185.42" width="0.3048" layer="91"/>
@@ -4839,7 +4839,7 @@ GND</text>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="ROT" gate="CON1" pin="2"/>
+<pinref part="S2" gate="CON1" pin="2"/>
 <wire x1="205.74" y1="182.88" x2="238.76" y2="182.88" width="0.3048" layer="91"/>
 <pinref part="LED11" gate="LED" pin="C"/>
 <wire x1="238.76" y1="182.88" x2="246.38" y2="182.88" width="0.3048" layer="91"/>
@@ -4850,7 +4850,7 @@ GND</text>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="ROT" gate="CON1" pin="3"/>
+<pinref part="S2" gate="CON1" pin="3"/>
 <wire x1="205.74" y1="180.34" x2="233.68" y2="180.34" width="0.3048" layer="91"/>
 <pinref part="LED10" gate="LED" pin="C"/>
 <wire x1="233.68" y1="180.34" x2="246.38" y2="180.34" width="0.3048" layer="91"/>
@@ -4861,7 +4861,7 @@ GND</text>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="ROT" gate="CON1" pin="4"/>
+<pinref part="S2" gate="CON1" pin="4"/>
 <wire x1="205.74" y1="177.8" x2="228.6" y2="177.8" width="0.3048" layer="91"/>
 <pinref part="LED9" gate="LED" pin="C"/>
 <wire x1="228.6" y1="177.8" x2="246.38" y2="177.8" width="0.3048" layer="91"/>
@@ -4880,14 +4880,14 @@ GND</text>
 <wire x1="208.28" y1="147.32" x2="198.12" y2="147.32" width="0.4064" layer="91"/>
 <junction x="208.28" y="165.1"/>
 <wire x1="233.68" y1="165.1" x2="233.68" y2="152.4" width="0.4064" layer="91"/>
-<pinref part="HOOK" gate="CON1" pin="5"/>
+<pinref part="S1" gate="CON1" pin="5"/>
 <wire x1="233.68" y1="152.4" x2="243.84" y2="152.4" width="0.4064" layer="91"/>
 <wire x1="243.84" y1="152.4" x2="246.38" y2="152.4" width="0.4064" layer="91"/>
 <wire x1="243.84" y1="152.4" x2="243.84" y2="147.32" width="0.4064" layer="91"/>
 <wire x1="243.84" y1="147.32" x2="264.16" y2="147.32" width="0.4064" layer="91"/>
 <wire x1="264.16" y1="147.32" x2="264.16" y2="170.18" width="0.4064" layer="91"/>
 <wire x1="264.16" y1="170.18" x2="246.38" y2="170.18" width="0.4064" layer="91"/>
-<pinref part="ROT" gate="CON1" pin="5"/>
+<pinref part="S2" gate="CON1" pin="5"/>
 <wire x1="246.38" y1="170.18" x2="246.38" y2="175.26" width="0.4064" layer="91"/>
 <junction x="243.84" y="152.4"/>
 </segment>
@@ -4948,7 +4948,7 @@ GND</text>
 <net name="N$29" class="0">
 <segment>
 <pinref part="M1" gate="G$1" pin="A6"/>
-<pinref part="CON1" gate="J" pin="2"/>
+<pinref part="HOME" gate="J" pin="2"/>
 <wire x1="55.88" y1="114.3" x2="104.14" y2="114.3" width="0.3048" layer="91"/>
 <wire x1="35.56" y1="147.32" x2="55.88" y2="147.32" width="0.3048" layer="91"/>
 <wire x1="55.88" y1="147.32" x2="55.88" y2="114.3" width="0.3048" layer="91"/>
@@ -4975,7 +4975,7 @@ GND</text>
 <pinref part="LED2" gate="LED" pin="C"/>
 <wire x1="66.04" y1="154.94" x2="66.04" y2="149.86" width="0.3048" layer="91"/>
 <wire x1="35.56" y1="149.86" x2="66.04" y2="149.86" width="0.3048" layer="91"/>
-<pinref part="CON1" gate="J" pin="3"/>
+<pinref part="HOME" gate="J" pin="3"/>
 <pinref part="M1" gate="G$1" pin="A7"/>
 <wire x1="66.04" y1="111.76" x2="104.14" y2="111.76" width="0.3048" layer="91"/>
 <wire x1="66.04" y1="149.86" x2="66.04" y2="111.76" width="0.3048" layer="91"/>
@@ -4989,7 +4989,7 @@ GND</text>
 <wire x1="223.52" y1="175.26" x2="243.84" y2="175.26" width="0.3048" layer="91"/>
 <wire x1="243.84" y1="175.26" x2="243.84" y2="162.56" width="0.3048" layer="91"/>
 <wire x1="243.84" y1="162.56" x2="246.38" y2="162.56" width="0.3048" layer="91"/>
-<pinref part="HOOK" gate="CON1" pin="1"/>
+<pinref part="S1" gate="CON1" pin="1"/>
 <pinref part="LED8" gate="LED" pin="C"/>
 <wire x1="223.52" y1="187.96" x2="223.52" y2="175.26" width="0.3048" layer="91"/>
 <junction x="223.52" y="175.26"/>
@@ -5001,7 +5001,7 @@ GND</text>
 <wire x1="205.74" y1="172.72" x2="218.44" y2="172.72" width="0.3048" layer="91"/>
 <wire x1="218.44" y1="172.72" x2="241.3" y2="172.72" width="0.3048" layer="91"/>
 <wire x1="241.3" y1="172.72" x2="241.3" y2="160.02" width="0.3048" layer="91"/>
-<pinref part="HOOK" gate="CON1" pin="2"/>
+<pinref part="S1" gate="CON1" pin="2"/>
 <wire x1="241.3" y1="160.02" x2="246.38" y2="160.02" width="0.3048" layer="91"/>
 <pinref part="LED7" gate="LED" pin="C"/>
 <wire x1="218.44" y1="187.96" x2="218.44" y2="172.72" width="0.3048" layer="91"/>
@@ -5014,7 +5014,7 @@ GND</text>
 <wire x1="205.74" y1="170.18" x2="213.36" y2="170.18" width="0.3048" layer="91"/>
 <wire x1="213.36" y1="170.18" x2="238.76" y2="170.18" width="0.3048" layer="91"/>
 <wire x1="238.76" y1="170.18" x2="238.76" y2="157.48" width="0.3048" layer="91"/>
-<pinref part="HOOK" gate="CON1" pin="3"/>
+<pinref part="S1" gate="CON1" pin="3"/>
 <wire x1="238.76" y1="157.48" x2="246.38" y2="157.48" width="0.3048" layer="91"/>
 <pinref part="LED6" gate="LED" pin="C"/>
 <wire x1="213.36" y1="187.96" x2="213.36" y2="170.18" width="0.3048" layer="91"/>
@@ -5027,7 +5027,7 @@ GND</text>
 <wire x1="205.74" y1="167.64" x2="208.28" y2="167.64" width="0.3048" layer="91"/>
 <wire x1="208.28" y1="167.64" x2="236.22" y2="167.64" width="0.3048" layer="91"/>
 <wire x1="236.22" y1="167.64" x2="236.22" y2="154.94" width="0.3048" layer="91"/>
-<pinref part="HOOK" gate="CON1" pin="4"/>
+<pinref part="S1" gate="CON1" pin="4"/>
 <wire x1="236.22" y1="154.94" x2="246.38" y2="154.94" width="0.3048" layer="91"/>
 <pinref part="LED5" gate="LED" pin="C"/>
 <wire x1="208.28" y1="187.96" x2="208.28" y2="167.64" width="0.3048" layer="91"/>

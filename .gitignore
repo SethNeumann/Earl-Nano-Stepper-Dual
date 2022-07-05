@@ -7,3 +7,15 @@
 *.s#2
 *.s#3
 work/Earl-Nano-Stepper-Dual~renumsch.scr
+*.GBL
+*.GBO
+*.GBS
+*.GML
+*.GTL
+*.GTO
+*.GTP
+*.GTS
+*.b##
+*.dri
+*.gpi
+*.s##

@@ -20,3 +20,5 @@ work/Earl-Nano-Stepper-Dual~renumsch.scr
 *.gpi
 *.s##
 Earl-Nano-Stepper-Dual.TXT
+*.xlsx
+*.csv
